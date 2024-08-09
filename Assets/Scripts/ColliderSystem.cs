@@ -19,7 +19,7 @@ public class ColliderSystem : MonoBehaviour
             audioSource.PlayOneShot(sound2);
             Debug.Log("当たった");
             GameManager.instance.AddScore(1);
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             Destroy(this.gameObject,0.5f);
         }
     }
